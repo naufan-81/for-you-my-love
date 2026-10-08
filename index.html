@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Untuk Kamu ❤️</title>
+    <style>
+      /* Mengambil font estetik dari Google Fonts */
+      @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:ital@0;1&display=swap");
+
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        font-family: "Lora", serif;
+        background-color: #fdfbfb;
+        color: #333;
+        scroll-behavior: smooth;
+      }
+
+      /* === EFEK PARALLAX === */
+      .parallax {
+        height: 100vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Perbaikan: Menghapus ekstensi .jpeg yang double */
+      .foto-1 {
+        background-image:
+          linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+          url("link-foto-1.jpeg");
+      }
+      .foto-2 {
+        background-image:
+          linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+          url("link-foto-2.jpeg");
+      }
+      .foto-3 {
+        background-image:
+          linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+          url("link-foto-3.jpeg");
+      }
+      .foto-4 {
+        background-image:
+          linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+          url("link-foto-4.jpeg");
+      }
+      .foto-5 {
+        background-image:
+          linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+          url("link-foto-5.jpeg");
+      }
+      .foto-6 {
+        background-image:
+          linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+          url("link-foto-6.jpeg");
+      }
+      .foto-7 {
+        background-image:
+          linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+          url("link-foto-7.jpeg");
+      }
+
+      .teks-overlay {
+        color: white;
+        font-family: "Dancing Script", cursive;
+        font-size: 4.5rem;
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+        text-align: center;
+        padding: 0 20px;
+        animation: fadeIn 3s ease-in-out;
+      }
+
+      /* === BAGIAN TEKS SURAT === */
+      .konten-surat {
+        padding: 100px 40px;
+        text-align: center;
+        background-color: #ffffff;
+        font-size: 1.2rem;
+        line-height: 1.8;
+        max-width: 700px;
+        margin: 0 auto;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+      }
+
+      .konten-surat h2 {
+        font-family: "Dancing Script", cursive;
+        color: #d6336c;
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+
+      /* Pemutar Musik */
+      .music-player {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 10px;
+        border-radius: 50px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Responsif untuk layar HP */
+      @media (max-width: 768px) {
+        .parallax {
+          background-attachment: scroll;
+        }
+        .teks-overlay {
+          font-size: 3rem;
+        }
+        .konten-surat {
+          padding: 60px 25px;
+          font-size: 1.1rem;
+        }
+        .konten-surat h2 {
+          font-size: 2.2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Perbaikan: Menghapus ekstensi .mp3 yang double -->
+    <div class="music-player">
+      <audio id="bg-music" controls loop>
+        <source src="lagu-romantis.mp3.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+
+    <!-- Bagian 1: Parallax Pembuka -->
+    <div class="parallax foto-1">
+      <div class="teks-overlay">Hai, Cantik...</div>
+    </div>
+
+    <div class="konten-surat">
+      <h2>Ada sesuatu buat kamu</h2>
+      <p>
+        Terkadang, sekadar chat rasanya nggak cukup untuk ngungkapin betapa
+        berartinya kamu buatku. Jadi, aku nulis barisan kode ini khusus untuk
+        kamu.
+      </p>
+    </div>
+
+    <!-- Bagian 2 -->
+    <div class="parallax foto-2">
+      <div class="teks-overlay">Tentang Hari-hariku...</div>
+    </div>
+
+    <div class="konten-surat">
+      <h2>Semenjak ada kamu...</h2>
+      <p>
+        Semua hal yang biasa aja tiba-tiba terasa jauh lebih spesial. Makasih ya
+        Sayanggg udah selalu ada, jadi pendengar yang baik, dan bikin duniaku
+        jadi penuh warna.
+      </p>
+    </div>
+
+    <!-- Bagian 3: Perbaikan class foto-3 -->
+    <div class="parallax foto-3">
+      <div class="teks-overlay">Tempat Pulangku</div>
+    </div>
+
+    <div class="konten-surat">
+      <h2>Rumah Ternyamanku</h2>
+      <p>
+        Kalau dunia lagi berisik dan bikin capek, senyum dan suara kamu selalu
+        berhasil jadi obat penenangnya. Sama kamu, aku merasa bebas jadi diriku
+        sendiri.
+      </p>
+    </div>
+
+    <!-- Bagian 4: Perbaikan class foto-4 -->
+    <div class="parallax foto-4">
+      <div class="teks-overlay">Hal Terindah</div>
+    </div>
+
+    <div class="konten-surat">
+      <h2>Aku Terlalu Beruntung</h2>
+      <p>
+        Kadang aku suka senyum-senyum sendiri kalau mikirin gimana caranya aku
+        bisa sama cewek sehebat, sepengertian, dan secantik kamu.
+      </p>
+    </div>
+
+    <!-- Bagian 5: Perbaikan class foto-5 -->
+    <div class="parallax foto-5">
+      <div class="teks-overlay">Melangkah Bersama</div>
+    </div>
+
+    <div class="konten-surat">
+      <h2>Untuk Masa Depan</h2>
+      <p>
+        Kehadiranmu selalu ngasih aku energi ekstra buat terus belajar dan
+        ngejar mimpi-mimpiku. Ayo kita sama-sama bertumbuh dan jadi versi
+        terbaik dari diri kita berdua.
+      </p>
+    </div>
+
+    <!-- Bagian 6: Perbaikan class foto-6 -->
+    <div class="parallax foto-6">
+      <div class="teks-overlay">Apapun yang Terjadi</div>
+    </div>
+
+    <div class="konten-surat">
+      <h2>Tetap Pegang Erat Tanganku Ya Sayanggg</h2>
+      <p>
+        Perjalanan ke depan mungkin nggak selalu mulus. Tapi selama kita hadapin
+        semuanya berdua, aku yakin kita selalu bisa nemuin jalan keluarnya.
+      </p>
+    </div>
+
+    <!-- Bagian 7: Perbaikan class foto-7 -->
+    <div class="parallax foto-7">
+      <div class="teks-overlay">I Love You ❤️</div>
+    </div>
+
+    <div class="konten-surat">
+      <h2>Untuk sekarang dan seterusnya</h2>
+      <p>
+        Terus sama-sama ya? Aku akan selalu berusaha memberikan versi terbaik
+        dari diriku untuk kita.
+      </p>
+      <br />
+      <p><em>- Dari cowok yang beruntung memilikimu.</em></p>
+    </div>
+
+    <!-- Script Musik -->
+    <script>
+      document.body.addEventListener(
+        "click",
+        function () {
+          let audio = document.getElementById("bg-music");
+          if (audio.paused) {
+            audio.play();
+          }
+        },
+        { once: true },
+      );
+    </script>
+  </body>
+</html>
